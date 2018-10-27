@@ -1,0 +1,50 @@
+#if !defined(AFX_EVENTLOGDLG_H__9412CA34_6958_11D3_80E2_0090271354E9__INCLUDED_)
+#define AFX_EVENTLOGDLG_H__9412CA34_6958_11D3_80E2_0090271354E9__INCLUDED_
+
+#if _MSC_VER >= 1000
+#pragma once
+#endif // _MSC_VER >= 1000
+// EventLogDlg.h : header file
+//
+
+/////////////////////////////////////////////////////////////////////////////
+// CEventLogDlg dialog
+
+class CEventLogDlg : public CPropertyPage
+{
+	DECLARE_DYNCREATE(CEventLogDlg)
+
+// Construction
+public:
+	CEventLogDlg();
+	~CEventLogDlg();
+
+// Dialog Data
+	//{{AFX_DATA(CEventLogDlg)
+	enum { IDD = IDD_EVENTLOGDIALOG };
+		// NOTE - ClassWizard will add data members here.
+		//    DO NOT EDIT what you see in these blocks of generated code !
+	//}}AFX_DATA
+
+
+// Overrides
+	// ClassWizard generate virtual function overrides
+	//{{AFX_VIRTUAL(CEventLogDlg)
+	protected:
+	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV support
+	//}}AFX_VIRTUAL
+
+// Implementation
+protected:
+	// Generated message map functions
+	//{{AFX_MSG(CEventLogDlg)
+		// NOTE: the ClassWizard will add member functions here
+	//}}AFX_MSG
+	DECLARE_MESSAGE_MAP()
+
+};
+
+//{{AFX_INSERT_LOCATION}}
+// Microsoft Developer Studio will insert additional declarations immediately before the previous line.
+
+#endif // !defined(AFX_EVENTLOGDLG_H__9412CA34_6958_11D3_80E2_0090271354E9__INCLUDED_)

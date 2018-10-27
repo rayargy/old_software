@@ -1,0 +1,46 @@
+// EventLogDlg.cpp : implementation file
+//
+
+#include "stdafx.h"
+#include "SMAD.h"
+#include "EventLogDlg.h"
+
+#ifdef _DEBUG
+#define new DEBUG_NEW
+#undef THIS_FILE
+static char THIS_FILE[] = __FILE__;
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+// CEventLogDlg property page
+
+IMPLEMENT_DYNCREATE(CEventLogDlg, CPropertyPage)
+
+CEventLogDlg::CEventLogDlg() : CPropertyPage(CEventLogDlg::IDD)
+{
+	//{{AFX_DATA_INIT(CEventLogDlg)
+		// NOTE: the ClassWizard will add member initialization here
+	//}}AFX_DATA_INIT
+}
+
+CEventLogDlg::~CEventLogDlg()
+{
+}
+
+void CEventLogDlg::DoDataExchange(CDataExchange* pDX)
+{
+	CPropertyPage::DoDataExchange(pDX);
+	//{{AFX_DATA_MAP(CEventLogDlg)
+		// NOTE: the ClassWizard will add DDX and DDV calls here
+	//}}AFX_DATA_MAP
+}
+
+
+BEGIN_MESSAGE_MAP(CEventLogDlg, CPropertyPage)
+	//{{AFX_MSG_MAP(CEventLogDlg)
+		// NOTE: the ClassWizard will add message map macros here
+	//}}AFX_MSG_MAP
+END_MESSAGE_MAP()
+
+/////////////////////////////////////////////////////////////////////////////
+// CEventLogDlg message handlers

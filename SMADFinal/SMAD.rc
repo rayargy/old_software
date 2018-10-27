@@ -1,0 +1,377 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\SMAD.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\SMAD.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 217, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About SMAD"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "SMAD Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 1999",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,32,14,WS_GROUP
+END
+
+IDD_SERVICEDIALOG DIALOG DISCARDABLE  0, 0, 400, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Services"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_SERVICELIST1,16,29,130,125,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Services on this machine",IDC_STATIC,18,14,126,8
+    LISTBOX         IDC_SERVICELIST2,174,29,130,125,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_TIMEOUTEDIT,237,163,61,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "The time out value for the service selected in seconds",
+                    IDC_STATIC,56,165,176,8
+    LTEXT           "Currently selected services",IDC_STATIC,173,14,128,8
+    PUSHBUTTON      "MoveUp",IDC_MOVEUPBUTTON,315,62,50,14
+    PUSHBUTTON      "MoveDown",IDC_MOVEDOWNBUTTON,315,82,50,14
+    CONTROL         "Spin1",IDC_TIMEOUTSPIN,"msctls_updown32",UDS_ARROWKEYS,
+                    299,163,10,14
+END
+
+IDD_BACKUPDIALOG DIALOG DISCARDABLE  0, 0, 400, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Backup"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_COPYLIST,14,21,314,44,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_MOVELIST,14,80,313,41,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_BACKUPLOC,15,137,314,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "You may set up a list of files for SMAD to backup in this screen. Typically, you would use the copy function to make backups of data files that cannot be deleted. The move files function does exactly that. It moves files from one place to another.",
+                    IDC_STATIC,19,167,350,29
+    PUSHBUTTON      "AddNew",IDC_ADDCOPYBUTTON,332,23,50,14
+    PUSHBUTTON      "AddNew",IDC_ADDMOVEBUTTON,331,79,50,14
+    PUSHBUTTON      "Change",IDC_CHANGEBUTTON,334,137,50,14
+    LTEXT           "Copy these file to the backup directory",IDC_STATIC,15,
+                    11,135,8
+    LTEXT           "Move these files to the backup directory",IDC_STATIC,15,
+                    69,130,8
+    LTEXT           "Specify the path for backups.",IDC_STATIC,15,125,126,8
+END
+
+IDD_REGISTRYDIALOG DIALOG DISCARDABLE  0, 0, 400, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Registry"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_REGEDIT,28,89,178,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Change",IDC_REGBUTTON,217,88,50,14
+    LTEXT           "Enter the full path and file name where the PARCS-CS registry key will be saved",
+                    IDC_STATIC,28,54,157,21
+END
+
+IDD_VERSIONDIALOG DIALOG DISCARDABLE  0, 0, 400, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "VersionInfo"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_VERSIONLIST,27,36,234,82,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Select file(s) to record version information",
+                    IDC_STATIC,27,18,186,8
+    EDITTEXT        IDC_VERSIONMDB,28,150,234,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "Change",IDC_VERSIONBUTTON,271,150,50,14
+    PUSHBUTTON      "AddNew",IDC_VSLISTBUTTON,268,36,50,14
+    LTEXT           "Enter the full path and file name of the access database to which the information will be saved",
+                    IDC_STATIC,29,130,231,16
+END
+
+IDD_EVENTLOGDIALOG DIALOG DISCARDABLE  0, 0, 400, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "NT Event Logs"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_EVENTLIST1,30,77,109,40,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "NT EventLogs on Local Machine",IDC_STATIC,31,65,116,8
+    LISTBOX         IDC_EVENTLIST2,159,77,99,40,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "EventLogs selected",IDC_STATIC,159,65,97,8
+    EDITTEXT        IDC_EVENTLOGEDIT,31,156,229,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "Change",IDC_EVENTLOGBUTTON,268,156,50,14
+    LTEXT           "To select the event logs you wish to save, double click on the log in the 'NT EventLogs on Local Machine' to add files to the 'EventLogs selected'. To remove event logs from the list, double click on the item in the 'EventLogs selected' list box.",
+                    IDC_STATIC,34,18,196,41
+    LTEXT           "Enter the full path and file name of the access database to which the event log information will be saved.",
+                    IDC_STATIC,32,135,189,16
+END
+
+IDD_ERRORDIALOG DIALOG DISCARDABLE  0, 0, 400, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "LogFile"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_SMADLOGEDIT,25,64,213,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "Change",IDC_SMADLOGBUTTON,248,64,50,14
+    LTEXT           "Enter the full path and file name for the SMAD logfile",
+                    IDC_STATIC,26,44,178,14
+    EDITTEXT        IDC_DEBUG,197,98,40,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Spin1",IDC_DEBUGSPIN,"msctls_updown32",UDS_ARROWKEYS,
+                    238,98,10,14
+    LTEXT           "Application Debug Level",IDC_STATIC,105,101,81,8
+END
+
+IDD_CABDIALOG DIALOG DISCARDABLE  0, 0, 400, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "File Compression"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_CABEDIT,30,56,240,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Change",IDC_CABBUTTON,275,56,50,14
+    LTEXT           "Enter the full path and file name to which all files will be archived.",
+                    IDC_STATIC,30,40,213,8
+END
+
+IDD_TESTSMAD DIALOG DISCARDABLE  0, 0, 241, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Test Mode"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT1,15,31,137,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Test",IDC_TESTBUTTON,166,31,50,14
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,
+                    15,65,202,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "SMAD MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "SMAD\0"
+            VALUE "LegalCopyright", "Copyright (C) 1999\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "SMAD.EXE\0"
+            VALUE "ProductName", "SMAD Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_SERVICEDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 388
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 190
+    END
+
+    IDD_BACKUPDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 391
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 196
+    END
+
+    IDD_REGISTRYDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 390
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+    END
+
+    IDD_VERSIONDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 392
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_EVENTLOGDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 390
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+    END
+
+    IDD_ERRORDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 383
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_CABDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 383
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 189
+    END
+
+    IDD_TESTSMAD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 234
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About SMAD..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\SMAD.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

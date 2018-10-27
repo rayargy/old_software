@@ -1,0 +1,109 @@
+--------------------Configuration: SMAD - Win32 Release--------------------
+Begining build with project "E:\Program Files\Devstudio\MyProjects\SMADFinal\SMAD.DSP", at root.
+Active configuration is Win32 (x86) Application (based on Win32 (x86) Application)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /Fo"Release/" /Fd"Release/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "NDEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x409 /fo"Release/SMAD.res" /d "NDEBUG" "
+			"Browser Database Maker" with flags "/nologo /o"Release/SMAD.bsc" "
+			"COFF Linker for 80x86" with flags "/nologo /subsystem:windows /incremental:no /pdb:"Release/SMAD.pdb" /machine:I386 /out:"Release/SMAD.exe" "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating command line "rc.exe /l 0x409 /fo"Release/SMAD.res" /d "NDEBUG" "E:\Program Files\Devstudio\MyProjects\SMADFinal\SMAD.rc"" 
+Creating temp file "C:\TEMP\RSP49.tmp" with contents </nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\Program Files\Devstudio\MyProjects\SMADFinal\BackupDlg.cpp"
+"E:\Program Files\Devstudio\MyProjects\SMADFinal\BackupFiles.cpp"
+"E:\Program Files\Devstudio\MyProjects\SMADFinal\CabFileDlg.cpp"
+"E:\Program Files\Devstudio\MyProjects\SMADFinal\CompressFile.cpp"
+"E:\Program Files\Devstudio\MyProjects\SMADFinal\DumpEventLog.cpp"
+"E:\Program Files\Devstudio\MyProjects\SMADFinal\EventInsertSet.cpp"
+"E:\Program Files\Devstudio\MyProjects\SMADFinal\EventLogDlg.cpp"
+"E:\Program Files\Devstudio\MyProjects\SMADFinal\MDBMaintenance.cpp"
+"E:\Program Files\Devstudio\MyProjects\SMADFinal\ReadEventLogs.cpp"
+"E:\Program Files\Devstudio\MyProjects\SMADFinal\registry.cpp"
+"E:\Program Files\Devstudio\MyProjects\SMADFinal\RegistryDlg.cpp"
+"E:\Program Files\Devstudio\MyProjects\SMADFinal\SaveRegKey.cpp"
+"E:\Program Files\Devstudio\MyProjects\SMADFinal\ServiceControl.cpp"
+"E:\Program Files\Devstudio\MyProjects\SMADFinal\ServiceDlg.cpp"
+"E:\Program Files\Devstudio\MyProjects\SMADFinal\SMAD.cpp"
+"E:\Program Files\Devstudio\MyProjects\SMADFinal\SMADDlg.cpp"
+"E:\Program Files\Devstudio\MyProjects\SMADFinal\SMADErrorLog.cpp"
+"E:\Program Files\Devstudio\MyProjects\SMADFinal\SMADErrorLogDlg.cpp"
+"E:\Program Files\Devstudio\MyProjects\SMADFinal\TestSmad.cpp"
+"E:\Program Files\Devstudio\MyProjects\SMADFinal\VersionInfo.cpp"
+"E:\Program Files\Devstudio\MyProjects\SMADFinal\VersionInfoDlg.cpp"
+"E:\Program Files\Devstudio\MyProjects\SMADFinal\VersionSet.cpp"
+"E:\Program Files\Devstudio\MyProjects\SMADFinal\FCIDLL.C"
+>
+Creating command line "cl.exe @C:\TEMP\RSP49.tmp" 
+Creating temp file "C:\TEMP\RSP4A.tmp" with contents </nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /Fp"Release/SMAD.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\Program Files\Devstudio\MyProjects\SMADFinal\StdAfx.cpp"
+>
+Creating command line "cl.exe @C:\TEMP\RSP4A.tmp" 
+Creating temp file "C:\TEMP\RSP4B.tmp" with contents </nologo /subsystem:windows /incremental:no /pdb:"Release/SMAD.pdb" /machine:I386 /out:"Release/SMAD.exe" 
+".\Release\BackupDlg.obj"
+".\Release\BackupFiles.obj"
+".\Release\CabFileDlg.obj"
+".\Release\CompressFile.obj"
+".\Release\DumpEventLog.obj"
+".\Release\EventInsertSet.obj"
+".\Release\EventLogDlg.obj"
+".\Release\MDBMaintenance.obj"
+".\Release\ReadEventLogs.obj"
+".\Release\registry.obj"
+".\Release\RegistryDlg.obj"
+".\Release\SaveRegKey.obj"
+".\Release\ServiceControl.obj"
+".\Release\ServiceDlg.obj"
+".\Release\SMAD.obj"
+".\Release\SMADDlg.obj"
+".\Release\SMADErrorLog.obj"
+".\Release\SMADErrorLogDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\TestSmad.obj"
+".\Release\VersionInfo.obj"
+".\Release\VersionInfoDlg.obj"
+".\Release\VersionSet.obj"
+".\Release\SMAD.res"
+"D:\Program Files\DevStudio\VC\lib\VERSION.LIB"
+".\Release\FCIDLL.OBJ">
+Creating command line "link.exe @C:\TEMP\RSP4B.tmp" 
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+BackupDlg.cpp
+BackupFiles.cpp
+CabFileDlg.cpp
+CompressFile.cpp
+DumpEventLog.cpp
+EventInsertSet.cpp
+EventLogDlg.cpp
+MDBMaintenance.cpp
+ReadEventLogs.cpp
+registry.cpp
+RegistryDlg.cpp
+SaveRegKey.cpp
+ServiceControl.cpp
+ServiceDlg.cpp
+SMAD.cpp
+E:\Program Files\Devstudio\MyProjects\SMADFinal\SMAD.cpp(165) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+SMADDlg.cpp
+SMADErrorLog.cpp
+SMADErrorLogDlg.cpp
+TestSmad.cpp
+VersionInfo.cpp
+E:\Program Files\Devstudio\MyProjects\SMADFinal\VersionInfo.cpp(197) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+VersionInfoDlg.cpp
+VersionSet.cpp
+Generating Code...
+Compiling...
+FCIDLL.C
+Generating Code...
+Linking...
+
+
+
+SMAD.exe - 0 error(s), 2 warning(s)
